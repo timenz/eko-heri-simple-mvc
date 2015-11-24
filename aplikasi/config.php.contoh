@@ -1,0 +1,18 @@
+<?php
+
+$config = [
+    'db_host' => 'localhost',
+    'db_username' => 'root',
+    'db_password' => '',
+    'db_database' => 'test',
+    'base_url' => 'http://localhost/test/mvc/',
+];
+
+function get_config($key, $alt = false){
+    global $config;
+    if(isset($config[$key])){
+        return $config[$key];
+    }
+
+    return $alt;
+}

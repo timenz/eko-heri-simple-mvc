@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS `tabel_mahasiswa` (
+  `nim` VARCHAR(20) NOT NULL,
+  `nama` VARCHAR(100) NOT NULL,
+  `jurusan` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`nim`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
